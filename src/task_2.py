@@ -16,9 +16,9 @@ def exercise_2_core(
     if count_elements != len(weights):
         raise ValueError(f'Количество весов не равно {count_elements}')
     if len(weights) > 100:
-        raise ValueError(f'Количество весов больше 100')
+        raise ValueError('Количество весов больше 100')
     if max(weights) > 100:
-        raise ValueError(f'Максимальный вес больше 100')
+        raise ValueError('Максимальный вес больше 100')
     if sum(weights) % 2:
         return False
 

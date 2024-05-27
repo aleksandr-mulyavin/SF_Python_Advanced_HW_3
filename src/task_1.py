@@ -21,9 +21,9 @@ def exercise_1_core(
         if count_elements != len(weights) or count_elements != len(costs):
             raise ValueError(f'Количество элементов и/или количество весов/стоимостей не равно {count_elements}')
         if len(weights) > 100:
-            raise ValueError(f'Количество весов/стоимостей больше 100')
+            raise ValueError('Количество весов/стоимостей больше 100')
         if max_weight > 10_000:
-            raise ValueError(f'Максимальный вес больше 10_000')
+            raise ValueError('Максимальный вес больше 10_000')
 
     # Инициализация массива
     values: np.ndarray = np.zeros(

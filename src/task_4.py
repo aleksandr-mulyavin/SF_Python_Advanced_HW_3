@@ -18,12 +18,11 @@ def exercise_4_core(
         if count_elements != len(weights):
             raise ValueError(f'Количество весов не равно {count_elements}')
         if len(weights) > 100:
-            raise ValueError(f'Весов больше 100')
+            raise ValueError('Весов больше 100')
         if max_weight > 10_000:
             raise ValueError(f'{max_weight} больше 10_000')
         if max(weights) > 100:
-            raise ValueError(f'Веса не могут быть больше 100')
-
+            raise ValueError('Веса не могут быть больше 100')
     # Инициализация списка значений длинной M + 1
     # Значение для каждого элемента будет N + 1
     init_val = 99999

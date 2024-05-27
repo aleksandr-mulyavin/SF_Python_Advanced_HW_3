@@ -59,7 +59,7 @@ if __name__ == '__main__':
     d_list = list(map(int, input(f"Введите {n} номиналов банкнот: ")
                       .replace(',', ' ')
                       .split()))
-    s = int(input(f"Введите сумму к выдаче: ")
+    s = int(input("Введите сумму к выдаче: ")
             .replace(',', ' '))
 
     try:
